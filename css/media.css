@@ -1,0 +1,91 @@
+@media (max-width: 1000px) {
+  .hero-and-projects {
+    flex-direction: column;
+  }
+  .hero-and-projects .hero-section {
+    height: 100vh;
+    width: 100vw;
+  }
+  .hero-and-projects .projects {
+    width: 100vw;
+  }
+  .hero-and-projects .projects .content div:first-child {
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 700px) {
+  main .projects .content div {
+    width: 500px;
+    text-align: center;
+  }
+  footer .contact h2 {
+    font-size: 20px;
+  }
+  footer .copyright {
+    font-size: 12px;
+  }
+  footer .fa-arrow-up {
+    font-size: 30px;
+    top: 5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  main .hero-section .content h1 {
+    font-size: 30px;
+  }
+  main .projects {
+    padding: 1rem 0 0 0;
+  }
+  main .projects header h1 {
+    font-size: 28px;
+  }
+  main .projects .content div h2 {
+    font-size: 17px;
+  }
+  main .projects .content div h3 {
+    font-size: 13px;
+  }
+  main .about-me .content h1 {
+    font-size: 25px;
+  }
+  main .about-me .content h2 {
+    font-size: 20px;
+  }
+  main .about-me .content h3 {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 500px) {
+  main .projects header {
+    margin-bottom: 1.5rem;
+  }
+  main .projects .content div {
+    width: 300px;
+    text-align: center;
+  }
+  footer .contact h2 {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 450px) {
+  main .hero-section .content h1 {
+    font-size: 20px;
+  }
+  main .hero-section .content h2 {
+    font-size: 16px;
+  }
+  main .projects {
+    align-items: center;
+  }
+  main .projects .content {
+    width: 90%;
+  }
+  footer .contact h2 {
+    font-size: 13px;
+  }
+}
+/*# sourceMappingURL=media.css.map */

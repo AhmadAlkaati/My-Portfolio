@@ -1,0 +1,270 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  line-height: 1.5;
+}
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+li {
+  list-style: none;
+}
+
+i {
+  cursor: pointer;
+}
+
+/* Custom Scrollbar */
+/* width */
+::-webkit-scrollbar {
+  width: 12px;
+  height: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track-piece {
+  background: #1a1818;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #3a3737;
+  border-radius: 10px;
+  height: 10px;
+}
+
+.intro {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background: #1d1e1f;
+  position: fixed;
+  z-index: 2;
+  transition: transform 2s;
+  overflow: hidden;
+}
+
+.intro .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: opacity1 2s ease-in-out;
+}
+
+@keyframes opacity1 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.intro .content button {
+  padding: 1rem;
+  margin-top: 1rem;
+  font-weight: 600;
+  font-size: 18px;
+  color: #fcf3f3;
+  background: #858383;
+  border-radius: 5px;
+}
+
+main {
+  background: #121212;
+}
+
+main .hero-and-projects {
+  display: flex;
+  animation: translate 2s ease-in-out;
+  min-height: 100vh;
+}
+
+@keyframes translate {
+  from {
+    transform: translateY(-2000px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
+
+main .hero-section::before {
+  content: '';
+  background: url("../images/laptop.jpg") center no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  filter: brightness(50%);
+}
+
+main .hero-section {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  box-shadow: 5px 5px 3px #272626;
+}
+
+main .hero-section .content {
+  padding-left: 3rem;
+  position: relative;
+  z-index: 1;
+  color: #ece7e7;
+}
+
+main .hero-section .content h1 {
+  font-weight: 500;
+  font-size: 50px;
+}
+
+main .hero-section .content h1 span span {
+  border-right: 0.2rem solid #d1cdcd;
+}
+
+main .hero-section .content h2 {
+  font-weight: 500;
+}
+
+main .projects {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 0 0 0;
+  color: #ece7e7;
+  margin-top: 4rem;
+  width: 50%;
+}
+
+main .projects header h1 {
+  text-align: center;
+  font-weight: 500;
+  font-size: 40px;
+}
+
+main .projects .content {
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+}
+
+main .projects .content div {
+  width: 80%;
+  margin: 1rem 0;
+}
+
+main .projects .content div img {
+  height: 400px;
+  max-width: 300px;
+  margin-top: 1rem;
+  border: 1px #3d3c3c;
+  border-style: dotted;
+}
+
+main .projects .content div h5 a {
+  text-decoration: underline;
+  color: #9daaad;
+}
+
+main .projects * {
+  font-weight: 500;
+}
+
+main .about-me {
+  color: #ece7e7;
+  border-top: 2px solid white;
+  margin-top: 3rem;
+  padding: 2rem 0;
+}
+
+main .about-me .content {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+main .about-me .content h1 {
+  font-size: 40px;
+}
+
+main .about-me .content h1,
+main .about-me .content h2,
+main .about-me .content h3 {
+  font-weight: 500;
+}
+
+footer {
+  background: #121212;
+  color: #ece7e7;
+  padding: 2rem 0 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2rem 0;
+  position: relative;
+}
+
+footer .contact h2,
+footer .contact h5 {
+  font-weight: 500;
+}
+
+footer .contact h5 {
+  margin: 0.5rem 0 0 0;
+}
+
+footer .social {
+  margin-bottom: 1rem;
+  padding: 1rem 0;
+}
+
+footer .social a i {
+  font-size: 2rem;
+  color: #3b3838;
+}
+
+footer .copyright {
+  position: absolute;
+  bottom: 0;
+}
+
+footer .fa-arrow-up {
+  font-size: 50px;
+  position: absolute;
+  right: 1rem;
+  color: #746d6d;
+}
+/*# sourceMappingURL=style.css.map */
