@@ -1,28 +1,94 @@
 @media (max-width: 1000px) {
-  .hero-and-projects {
-    flex-direction: column;
-    .hero-section {
-      height: 100vh;
-      width: 100vw;
+  main {
+    .hero-projects-skills {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 2300px;
+      .projects {
+        padding: 0 2rem;
+
+        .content {
+          width: 100%;
+          div {
+            width: 100%;
+          }
+          div:first-child {
+            margin-bottom: 2rem;
+          }
+        }
+      }
+      .skills {
+        width: 100%;
+        .content {
+          justify-content: space-evenly;
+        }
+      }
     }
-    .projects {
-      width: 100vw;
-      .content {
-        div:first-child {
-          margin-bottom: 2rem;
+  }
+}
+@media (max-width: 800px) {
+  main {
+    .hero-projects-skills {
+      .hero-section {
+        .content {
+          h1 {
+            font-size: 35px;
+          }
         }
       }
     }
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 550px) {
   main {
-    .projects {
+    .hero-projects-skills {
+      height: 2100px;
+      .projects {
+        header {
+          h1 {
+            font-size: 30px;
+          }
+        }
+        .content {
+          div {
+            h2 {
+              font-size: 19px;
+            }
+            h3 {
+              font-size: 15px;
+            }
+            h4 {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+      .skills {
+        header {
+          h1 {
+            font-size: 30px;
+          }
+        }
+        .content {
+          justify-content: space-around;
+
+          div {
+            h2 {
+              font-size: 20px;
+            }
+            i {
+              font-size: 80px;
+            }
+          }
+        }
+      }
+    }
+    .about-me {
       .content {
-        div {
-          width: 500px;
-          text-align: center;
+        h1 {
+          font-size: 30px;
         }
       }
     }
@@ -33,106 +99,65 @@
         font-size: 20px;
       }
     }
-    .copyright {
-      font-size: 12px;
-    }
-    .fa-arrow-up {
-      font-size: 30px;
-      top: 5rem;
-    }
-  }
-}
-
-@media (max-width: 600px) {
-  main {
-    .hero-section {
-      .content {
-        h1 {
-          font-size: 30px;
-        }
-      }
-    }
-    .projects {
-      padding: 1rem 0 0 0;
-      header {
-        h1 {
-          font-size: 28px;
-        }
-      }
-      .content {
-        div {
-          h2 {
-            font-size: 17px;
-          }
-          h3 {
-            font-size: 13px;
-          }
-        }
-      }
-    }
-    .about-me {
-      .content {
-        h1 {
-          font-size: 25px;
-        }
-        h2 {
-          font-size: 20px;
-        }
-        h3 {
-          font-size: 16px;
-        }
-      }
-    }
-  }
-}
-
-@media (max-width: 500px) {
-  main {
-    .projects {
-      header {
-        margin-bottom: 1.5rem;
-      }
-      .content {
-        div {
-          width: 300px;
-          text-align: center;
-        }
-      }
-    }
-  }
-  footer {
-    .contact {
-      h2 {
-        font-size: 13px;
-      }
-    }
   }
 }
 
 @media (max-width: 450px) {
   main {
-    .hero-section {
-      .content {
-        h1 {
-          font-size: 20px;
-        }
-        h2 {
-          font-size: 16px;
+    .hero-projects-skills {
+      height: 2200px;
+      .hero-section {
+        .content {
+          padding-left: 1rem;
+          h1 {
+            font-size: 27px;
+          }
+          h2 {
+            font-size: 18px;
+          }
         }
       }
-    }
-    .projects {
-      align-items: center;
-      .content {
-        width: 90%;
+      .projects {
+        padding: 0 1rem;
       }
     }
   }
   footer {
     .contact {
       h2 {
-        font-size: 13px;
+        font-size: 16px;
       }
+    }
+  }
+}
+
+@media (max-width: 350px) {
+  main {
+    .hero-projects-skills {
+      .content {
+        div {
+          h2 {
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+  .about-me {
+    .content {
+      h1 {
+        font-size: 25px;
+      }
+      h3 {
+        font-size: 16px;
+      }
+    }
+  }
+}
+footer {
+  .contact {
+    h2 {
+      font-size: 14px;
     }
   }
 }

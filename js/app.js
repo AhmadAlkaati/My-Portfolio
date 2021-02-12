@@ -59,34 +59,12 @@ function init() {
   // init typewriter
   new typeWriter(txtElement, words, wait);
 }
+
 /*   Type Writer End */
-
-// Scrolling when a tags are clicked
-const projects = document.querySelector('.projects');
-const aboutMe = document.querySelector('.about-me');
-const links = document.querySelectorAll('nav ul a');
-const hero = document.querySelector('.hero-section');
-function scrollingToSections() {
-  links.forEach((link, index) => {
-    link.onclick = () => {
-      if (index == 0) {
-        projects.scrollIntoView();
-        link.classList.add('active');
-        links[1].classList.remove('active');
-      }
-
-      if (index == 1) {
-        aboutMe.scrollIntoView();
-        link.classList.add('active');
-        links[0].classList.remove('active');
-      }
-    };
-  });
-}
-scrollingToSections();
 
 /* Scrolling to top of page when arrow-up button is clicked */
 function scrollingTop() {
+  const hero = document.querySelector('.hero-section');
   const topArrow = document.querySelector('.fa-arrow-up');
   topArrow.onclick = () => {
     hero.scrollIntoView();
@@ -104,15 +82,12 @@ function introAnimation() {
 }
 introAnimation();
 
-/* Elements Animation on scroll */
-
-/* Animation On Scroll */
 /* Animation On Scroll */
 const animated = document.querySelectorAll('.animated');
 let observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.intersectionRatio > 0) {
-      entry.target.style.animation = `opacity 2s forwards ease-out `;
+      entry.target.style.animation = `opacity 4s forwards ease-out `;
     } else {
       entry.target.style.animation = 'none';
     }

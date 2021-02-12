@@ -1,91 +1,106 @@
 @media (max-width: 1000px) {
-  .hero-and-projects {
+  main .hero-projects-skills {
+    display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    height: 2300px;
   }
-  .hero-and-projects .hero-section {
-    height: 100vh;
-    width: 100vw;
+  main .hero-projects-skills .projects {
+    padding: 0 2rem;
   }
-  .hero-and-projects .projects {
-    width: 100vw;
+  main .hero-projects-skills .projects .content {
+    width: 100%;
   }
-  .hero-and-projects .projects .content div:first-child {
+  main .hero-projects-skills .projects .content div {
+    width: 100%;
+  }
+  main .hero-projects-skills .projects .content div:first-child {
     margin-bottom: 2rem;
   }
+  main .hero-projects-skills .skills {
+    width: 100%;
+  }
+  main .hero-projects-skills .skills .content {
+    justify-content: space-evenly;
+  }
 }
 
-@media (max-width: 700px) {
-  main .projects .content div {
-    width: 500px;
-    text-align: center;
+@media (max-width: 800px) {
+  main .hero-projects-skills .hero-section .content h1 {
+    font-size: 35px;
   }
-  footer .contact h2 {
-    font-size: 20px;
+}
+
+@media (max-width: 550px) {
+  main .hero-projects-skills {
+    height: 2100px;
   }
-  footer .copyright {
+  main .hero-projects-skills .projects header h1 {
+    font-size: 30px;
+  }
+  main .hero-projects-skills .projects .content div h2 {
+    font-size: 19px;
+  }
+  main .hero-projects-skills .projects .content div h3 {
+    font-size: 15px;
+  }
+  main .hero-projects-skills .projects .content div h4 {
     font-size: 12px;
   }
-  footer .fa-arrow-up {
-    font-size: 30px;
-    top: 5rem;
-  }
-}
-
-@media (max-width: 600px) {
-  main .hero-section .content h1 {
+  main .hero-projects-skills .skills header h1 {
     font-size: 30px;
   }
-  main .projects {
-    padding: 1rem 0 0 0;
+  main .hero-projects-skills .skills .content {
+    justify-content: space-around;
   }
-  main .projects header h1 {
-    font-size: 28px;
-  }
-  main .projects .content div h2 {
-    font-size: 17px;
-  }
-  main .projects .content div h3 {
-    font-size: 13px;
-  }
-  main .about-me .content h1 {
-    font-size: 25px;
-  }
-  main .about-me .content h2 {
+  main .hero-projects-skills .skills .content div h2 {
     font-size: 20px;
   }
-  main .about-me .content h3 {
-    font-size: 16px;
+  main .hero-projects-skills .skills .content div i {
+    font-size: 80px;
   }
-}
-
-@media (max-width: 500px) {
-  main .projects header {
-    margin-bottom: 1.5rem;
-  }
-  main .projects .content div {
-    width: 300px;
-    text-align: center;
+  main .about-me .content h1 {
+    font-size: 30px;
   }
   footer .contact h2 {
-    font-size: 13px;
+    font-size: 20px;
   }
 }
 
 @media (max-width: 450px) {
-  main .hero-section .content h1 {
-    font-size: 20px;
+  main .hero-projects-skills {
+    height: 2200px;
   }
-  main .hero-section .content h2 {
-    font-size: 16px;
+  main .hero-projects-skills .hero-section .content {
+    padding-left: 1rem;
   }
-  main .projects {
-    align-items: center;
+  main .hero-projects-skills .hero-section .content h1 {
+    font-size: 27px;
   }
-  main .projects .content {
-    width: 90%;
+  main .hero-projects-skills .hero-section .content h2 {
+    font-size: 18px;
+  }
+  main .hero-projects-skills .projects {
+    padding: 0 1rem;
   }
   footer .contact h2 {
-    font-size: 13px;
+    font-size: 16px;
   }
+}
+
+@media (max-width: 350px) {
+  main .hero-projects-skills .content div h2 {
+    font-size: 15px;
+  }
+  .about-me .content h1 {
+    font-size: 25px;
+  }
+  .about-me .content h3 {
+    font-size: 16px;
+  }
+}
+
+footer .contact h2 {
+  font-size: 14px;
 }
 /*# sourceMappingURL=media.css.map */

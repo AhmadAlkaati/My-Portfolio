@@ -33,6 +33,10 @@ i {
   cursor: pointer;
 }
 
+body {
+  background: #121212;
+}
+
 /* Custom Scrollbar */
 /* width */
 ::-webkit-scrollbar {
@@ -42,12 +46,12 @@ i {
 
 /* Track */
 ::-webkit-scrollbar-track-piece {
-  background: #1a1818;
+  background: #333232;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #3a3737;
+  background: #d2691e;
   border-radius: 10px;
   height: 10px;
 }
@@ -59,8 +63,8 @@ i {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: white;
-  background: #1d1e1f;
+  color: #ece7e7;
+  background: #121212;
   position: fixed;
   z-index: 2;
   transition: transform 2s;
@@ -88,31 +92,18 @@ i {
   margin-top: 1rem;
   font-weight: 600;
   font-size: 18px;
-  color: #fcf3f3;
-  background: #858383;
+  color: #ece7e7;
+  background: #d2691e;
   border-radius: 5px;
 }
 
-main {
-  background: #121212;
+main .hero-projects-skills {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 90vh);
 }
 
-main .hero-and-projects {
-  display: flex;
-  animation: translate 2s ease-in-out;
-  min-height: 100vh;
-}
-
-@keyframes translate {
-  from {
-    transform: translateY(-2000px);
-  }
-  to {
-    transform: translateY(0px);
-  }
-}
-
-main .hero-section::before {
+main .hero-projects-skills .hero-section::before {
   content: '';
   background: url("../images/laptop.jpg") center no-repeat;
   background-size: cover;
@@ -124,52 +115,52 @@ main .hero-section::before {
   filter: brightness(50%);
 }
 
-main .hero-section {
-  width: 50%;
+main .hero-projects-skills .hero-section {
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: flex-start;
   position: relative;
   box-shadow: 5px 5px 3px #272626;
+  animation: translate 2s ease-in-out;
 }
 
-main .hero-section .content {
+main .hero-projects-skills .hero-section .content {
   padding-left: 3rem;
   position: relative;
   z-index: 1;
   color: #ece7e7;
 }
 
-main .hero-section .content h1 {
+main .hero-projects-skills .hero-section .content h1 {
   font-weight: 500;
   font-size: 50px;
 }
 
-main .hero-section .content h1 span span {
-  border-right: 0.2rem solid #d1cdcd;
+main .hero-projects-skills .hero-section .content h1 span span {
+  border-right: 0.2rem solid #ece7e7;
 }
 
-main .hero-section .content h2 {
+main .hero-projects-skills .hero-section .content h2 {
   font-weight: 500;
 }
 
-main .projects {
+main .hero-projects-skills .projects {
   display: flex;
   flex-direction: column;
   padding: 3rem 0 0 0;
   color: #ece7e7;
-  margin-top: 4rem;
-  width: 50%;
+  animation: translate 2s ease-in-out;
 }
 
-main .projects header h1 {
+main .hero-projects-skills .projects header h1 {
   text-align: center;
   font-weight: 500;
   font-size: 40px;
+  color: #d2691e;
 }
 
-main .projects .content {
-  padding-top: 1rem;
+main .hero-projects-skills .projects .content {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -177,26 +168,73 @@ main .projects .content {
   text-align: center;
 }
 
-main .projects .content div {
+main .hero-projects-skills .projects .content div {
   width: 80%;
   margin: 1rem 0;
 }
 
-main .projects .content div img {
+main .hero-projects-skills .projects .content div img {
   height: 400px;
   max-width: 300px;
   margin-top: 1rem;
-  border: 1px #3d3c3c;
+  border: 1px #ece7e7;
   border-style: dotted;
 }
 
-main .projects .content div h5 a {
-  text-decoration: underline;
-  color: #9daaad;
+main .hero-projects-skills .projects .content div h4 a {
+  color: #d2691e;
 }
 
-main .projects * {
+main .hero-projects-skills .projects * {
   font-weight: 500;
+}
+
+main .hero-projects-skills .skills {
+  align-self: center;
+}
+
+main .hero-projects-skills .skills header {
+  display: flex;
+  justify-content: center;
+}
+
+main .hero-projects-skills .skills header h1 {
+  color: #d2691e;
+  font-size: 40px;
+  font-weight: 500;
+}
+
+main .hero-projects-skills .skills .content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+main .hero-projects-skills .skills .content div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+main .hero-projects-skills .skills .content div h2 {
+  color: #ece7e7;
+  font-weight: 500;
+}
+
+main .hero-projects-skills .skills .content div i {
+  font-size: 150px;
+  color: #d2691e;
+}
+
+@keyframes translate {
+  from {
+    transform: translateY(-2000px);
+  }
+  to {
+    transform: translateY(0px);
+  }
 }
 
 main .about-me {
@@ -217,6 +255,7 @@ main .about-me .content {
 
 main .about-me .content h1 {
   font-size: 40px;
+  color: #d2691e;
 }
 
 main .about-me .content h1,
@@ -226,7 +265,6 @@ main .about-me .content h3 {
 }
 
 footer {
-  background: #121212;
   color: #ece7e7;
   padding: 2rem 0 0 0;
   display: flex;
@@ -253,7 +291,7 @@ footer .social {
 
 footer .social a i {
   font-size: 2rem;
-  color: #3b3838;
+  color: #d2691e;
 }
 
 footer .copyright {
@@ -265,6 +303,16 @@ footer .fa-arrow-up {
   font-size: 50px;
   position: absolute;
   right: 1rem;
-  color: #746d6d;
+  bottom: 1rem;
+  color: #d2691e;
+}
+
+@keyframes opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 /*# sourceMappingURL=style.css.map */
