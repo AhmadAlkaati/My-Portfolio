@@ -2,14 +2,18 @@
   main .hero-projects-skills {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    height: 2300px;
+    justify-content: space-around;
+    height: 3000px;
+  }
+  main .hero-projects-skills .hero-section {
+    height: 100vh;
   }
   main .hero-projects-skills .projects {
     padding: 0 2rem;
   }
   main .hero-projects-skills .projects .content {
     width: 100%;
+    flex-direction: column;
   }
   main .hero-projects-skills .projects .content div {
     width: 100%;
@@ -33,7 +37,7 @@
 
 @media (max-width: 550px) {
   main .hero-projects-skills {
-    height: 2100px;
+    height: 2800px;
   }
   main .hero-projects-skills .projects header h1 {
     font-size: 30px;
@@ -72,9 +76,6 @@
 }
 
 @media (max-width: 450px) {
-  main .hero-projects-skills {
-    height: 2200px;
-  }
   main .hero-projects-skills .hero-section .content {
     padding-left: 1rem;
   }

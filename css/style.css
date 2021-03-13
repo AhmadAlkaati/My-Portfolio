@@ -100,7 +100,7 @@ body {
 main .hero-projects-skills {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 90vh);
+  grid-template-rows: 500px 800px;
 }
 
 main .hero-projects-skills .hero-section::before {
@@ -116,7 +116,7 @@ main .hero-projects-skills .hero-section::before {
 }
 
 main .hero-projects-skills .hero-section {
-  height: 100vh;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -142,50 +142,6 @@ main .hero-projects-skills .hero-section .content h1 span span {
 }
 
 main .hero-projects-skills .hero-section .content h2 {
-  font-weight: 500;
-}
-
-main .hero-projects-skills .projects {
-  display: flex;
-  flex-direction: column;
-  padding: 3rem 0 0 0;
-  color: #ece7e7;
-  animation: translate 2s ease-in-out;
-}
-
-main .hero-projects-skills .projects header h1 {
-  text-align: center;
-  font-weight: 500;
-  font-size: 40px;
-  color: #d2691e;
-}
-
-main .hero-projects-skills .projects .content {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  text-align: center;
-}
-
-main .hero-projects-skills .projects .content div {
-  width: 80%;
-  margin: 1rem 0;
-}
-
-main .hero-projects-skills .projects .content div img {
-  height: 400px;
-  max-width: 300px;
-  margin-top: 1rem;
-  border: 1px #ece7e7;
-  border-style: dotted;
-}
-
-main .hero-projects-skills .projects .content div h4 a {
-  color: #d2691e;
-}
-
-main .hero-projects-skills .projects * {
   font-weight: 500;
 }
 
@@ -228,6 +184,48 @@ main .hero-projects-skills .skills .content div i {
   color: #d2691e;
 }
 
+main .hero-projects-skills .projects {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 1rem 0 1rem;
+  color: #ece7e7;
+  animation: translate 2s ease-in-out;
+  grid-column: 1/-1;
+}
+
+main .hero-projects-skills .projects header h1 {
+  text-align: center;
+  font-weight: 500;
+  font-size: 40px;
+  color: #d2691e;
+}
+
+main .hero-projects-skills .projects .content {
+  display: flex;
+  text-align: center;
+}
+
+main .hero-projects-skills .projects .content div {
+  width: 80%;
+  margin: 1rem 0;
+}
+
+main .hero-projects-skills .projects .content div img {
+  height: 400px;
+  max-width: 300px;
+  margin-top: 1rem;
+  border: 1px #ece7e7;
+  border-style: dotted;
+}
+
+main .hero-projects-skills .projects .content div h4 a {
+  color: #d2691e;
+}
+
+main .hero-projects-skills .projects * {
+  font-weight: 500;
+}
+
 @keyframes translate {
   from {
     transform: translateY(-2000px);
@@ -242,6 +240,9 @@ main .about-me {
   border-top: 2px solid white;
   margin-top: 3rem;
   padding: 2rem 0;
+  grid-row: 3/-1;
+  align-self: center;
+  line-height: 2;
 }
 
 main .about-me .content {
@@ -292,6 +293,7 @@ footer .social {
 footer .social a i {
   font-size: 2rem;
   color: #d2691e;
+  margin: 0 0.3rem;
 }
 
 footer .copyright {

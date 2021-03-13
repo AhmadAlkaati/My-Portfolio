@@ -97,3 +97,10 @@ let observer = new IntersectionObserver((entries) => {
 animated.forEach((anim) => {
   observer.observe(anim);
 });
+
+// /* Updating date automatically */
+const dateValue = document.querySelector('.copyright span');
+const currentDate = new Date();
+const currentYear = currentDate.getFullYear();
+dateValue.innerHTML = currentYear;
+console.log(currentDate);

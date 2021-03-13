@@ -3,13 +3,17 @@
     .hero-projects-skills {
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
-      height: 2300px;
+      justify-content: space-around;
+      height: 3000px;
+      .hero-section {
+        height: 100vh;
+      }
       .projects {
         padding: 0 2rem;
 
         .content {
           width: 100%;
+          flex-direction: column;
           div {
             width: 100%;
           }
@@ -44,7 +48,7 @@
 @media (max-width: 550px) {
   main {
     .hero-projects-skills {
-      height: 2100px;
+      height: 2800px;
       .projects {
         header {
           h1 {
@@ -109,7 +113,6 @@
 @media (max-width: 450px) {
   main {
     .hero-projects-skills {
-      height: 2200px;
       .hero-section {
         .content {
           padding-left: 1rem;
