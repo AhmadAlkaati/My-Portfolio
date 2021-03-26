@@ -1,10 +1,10 @@
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
   main {
     .hero-projects-skills {
       display: flex;
       flex-direction: column;
       justify-content: space-around;
-      height: 3200px;
+      height: 3500px;
       .hero-section {
         height: 100vh;
       }
@@ -48,7 +48,7 @@
 @media (max-width: 550px) {
   main {
     .hero-projects-skills {
-      height: 3000px;
+      height: 3200px;
       .projects {
         header {
           h1 {

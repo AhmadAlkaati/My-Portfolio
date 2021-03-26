@@ -100,7 +100,7 @@ body {
 main .hero-projects-skills {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 500px 800px;
+  grid-template-rows: 500px 1200px;
 }
 
 main .hero-projects-skills .hero-section::before {
@@ -193,6 +193,10 @@ main .hero-projects-skills .projects {
   grid-column: 1/-1;
 }
 
+main .hero-projects-skills .projects header {
+  margin-bottom: 1rem;
+}
+
 main .hero-projects-skills .projects header h1 {
   text-align: center;
   font-weight: 500;
@@ -202,28 +206,31 @@ main .hero-projects-skills .projects header h1 {
 
 main .hero-projects-skills .projects .content {
   display: flex;
+  flex-wrap: wrap;
   text-align: center;
+  justify-content: space-around;
 }
 
 main .hero-projects-skills .projects .content div {
-  width: 80%;
-  margin: 1rem 0;
+  width: 500px;
 }
 
-main .hero-projects-skills .projects .content div img {
-  height: 400px;
-  max-width: 300px;
-  margin-top: 1rem;
-  border: 1px #ece7e7;
-  border-style: dotted;
+main .hero-projects-skills .projects .content div h4 {
+  font-size: 13px;
 }
 
 main .hero-projects-skills .projects .content div h4 a {
   color: #d2691e;
 }
 
-main .hero-projects-skills .projects * {
+main .hero-projects-skills .projects .content div * {
   font-weight: 500;
+}
+
+main .hero-projects-skills .projects .content img {
+  height: 400px;
+  max-width: 300px;
+  margin-top: 1rem;
 }
 
 @keyframes translate {
