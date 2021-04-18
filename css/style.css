@@ -100,7 +100,7 @@ body {
 main .hero-projects-skills {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 500px 1200px;
+  grid-template-rows: 500px 2300px;
 }
 
 main .hero-projects-skills .hero-section::before {
@@ -213,6 +213,7 @@ main .hero-projects-skills .projects .content {
 
 main .hero-projects-skills .projects .content div {
   width: 500px;
+  margin: 1rem 0;
 }
 
 main .hero-projects-skills .projects .content div h4 {
